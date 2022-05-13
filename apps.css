@@ -20,24 +20,116 @@
 
 body {
     font-family: 'Kumbh Sans', sans-serif;
-}
-
-.container {
     background-color: var(--DarkCyan);
     padding: 2rem;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
 }
+
+.top-circle {
+    position: absolute;
+    top: -250px;
+    left: -350px;
+}
+
+.bottom-circle {
+    position: absolute;
+    bottom: -250px;
+    right: -350px;
+}
+
+.circles img {
+    width: 550px;
+    opacity: .6;
+
+}
+
 
 .card {
     background-color: white;
+    position: relative;
+    width: 350px;
+    height: 350px;
+    padding: 1rem;
+    border-radius: 15px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    text-align: center;
+    overflow: hidden;
 }
 
+.header-background {
+    position: absolute;
+    top: 0;
+
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 1.8rem;
+    color: var(--VeryDarkDesaturatedBlue);
+}
+
+.profile {
+    position: relative;
+    
+}
+
+.profile:after {
+    display: block;
+    margin-bottom: 20px;
+    content: '';
+    width: 330px;
+    height: 1px;
+    background-color: rgba(128, 128, 128, .2);
+    top: 80px;
+    margin-top: 1rem;
+}
+
+.socials ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.socials li {
+    margin-right: 4.5rem;
+}
+
+.socials li:nth-child(3) {
+    margin-right: 0;
+}
+
+
+.socials h1 {
+    font-size: 1.2rem;
+
+}
+
+.socials p {
+    font-size: .8rem;
+}
 
 
 .attribution {
     font-size: 11px;
     text-align: center;
+    margin-top: 2rem;
+    color: white;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: yellowgreen;
+}
+
+.attribution a:hover {
+    color: white;
 }
