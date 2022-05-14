@@ -46,22 +46,22 @@ body {
 
 }
 
-
 .card {
     background-color: white;
     position: relative;
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 380px;
     padding: 1rem;
-    border-radius: 15px;
+    border-radius: 18px;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 5rem;
     text-align: center;
     overflow: hidden;
+    box-shadow: 1rem 1rem 2rem rgb(45, 50, 72, .4);
 }
 
 .header-background {
@@ -74,13 +74,39 @@ body {
     display: flex;
     align-items: center;
     position: absolute;
-    bottom: 1.8rem;
+    bottom: 1.5rem;
     color: var(--VeryDarkDesaturatedBlue);
 }
 
 .profile {
     position: relative;
-    
+
+}
+
+.profile img {
+    padding: .3rem;
+    background-color: white;
+    border-radius: 50%;
+    margin: 1rem 0 1rem 0;
+
+}
+
+.profile h1 {
+
+    margin-bottom: .5rem;
+    font-size: 1.2rem;
+}
+
+.profile h1 span {
+    color: var(--VeryDarkDesaturatedBlue);
+    font-weight: 400;
+}
+
+.profile p {
+    color: var(--VeryDarkDesaturatedBlue);
+    font-size: .9rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
 }
 
 .profile:after {
@@ -89,9 +115,9 @@ body {
     content: '';
     width: 330px;
     height: 1px;
-    background-color: rgba(128, 128, 128, .2);
+    background-color: rgba(128, 128, 128, .4);
     top: 80px;
-    margin-top: 1rem;
+    margin-top: .5rem;
 }
 
 .socials ul {
@@ -101,7 +127,7 @@ body {
 }
 
 .socials li {
-    margin-right: 4.5rem;
+    margin-right: 3.5rem;
 }
 
 .socials li:nth-child(3) {
@@ -116,18 +142,21 @@ body {
 
 .socials p {
     font-size: .8rem;
+    letter-spacing: 1px;
 }
 
 
 .attribution {
-    font-size: 11px;
+    font-size: .8rem;
     text-align: center;
     margin-top: 2rem;
+    line-height: 1.2rem;
     color: white;
 }
 
 .attribution a {
     color: yellowgreen;
+    text-decoration: none;
 }
 
 .attribution a:hover {
